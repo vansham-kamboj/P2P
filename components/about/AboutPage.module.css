@@ -1,0 +1,209 @@
+.page {
+  background-color: #0a122a;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 2rem;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.logo {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-family: var(--font-head), sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  gap: 10px;
+}
+
+.logoBox {
+  background: #3edbff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #1e4fff;
+  height: 24px;
+  width: 24px;
+}
+
+.back {
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  transition: border-color 0.2s;
+}
+
+.back:hover {
+  border-color: #fff;
+}
+
+.aboutHero {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 6rem 0 4rem;
+}
+
+.aboutHero h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 2rem;
+}
+
+.aboutHero span {
+  color: #3edbff;
+}
+
+.aboutHero i {
+  color: #22e584;
+  font-style: normal;
+}
+
+.aboutHero p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 700px;
+  opacity: 0.85;
+}
+
+.missionBox {
+  background: #1e4fff;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  box-shadow: 10px 10px 0 #22e584;
+  margin: 4rem 0;
+  padding: 3rem;
+  transform: rotate(-1deg);
+}
+
+.missionBox h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.missionBox p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.teamSection {
+  padding: 6rem 0 8rem;
+}
+
+.teamTitle {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.teamGrid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.charCard {
+  background: #0a122a;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 #fff;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.charCard:hover {
+  border-color: #3edbff;
+  box-shadow: 12px 12px 0 #3edbff;
+  transform: translate(-4px, -4px);
+}
+
+.charImgBox {
+  align-items: center;
+  border-bottom: 3px solid #fff;
+  display: flex;
+  height: 220px;
+  justify-content: center;
+}
+
+.charAvatar {
+  filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.5));
+}
+
+.charInfo {
+  padding: 1.5rem;
+}
+
+.charRole {
+  color: #22e584;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.charName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.statRow {
+  align-items: center;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.progressBar {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+  width: 60%;
+}
+
+.progressFill {
+  background: #3edbff;
+  height: 100%;
+}
+
+.footer {
+  border-top: 2px solid #fff;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.9rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .aboutHero p {
+    font-size: 1.05rem;
+  }
+
+  .missionBox {
+    padding: 2rem;
+  }
+}
